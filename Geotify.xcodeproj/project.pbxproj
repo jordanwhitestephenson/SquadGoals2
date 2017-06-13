@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB6521A739B7A00228A1F /* AppDelegate.swift */; };
+		D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90CB6561A739B7A00228A1F /* Main.storyboard */; };
+		D90CB65A1A739B7A00228A1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90CB6591A739B7A00228A1F /* Images.xcassets */; };
+		D90CB65D1A739B7A00228A1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */; };
+		D90CB6731A739D4300228A1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90CB6721A739D4300228A1F /* CoreLocation.framework */; };
+		D90CB6751A73A16700228A1F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90CB6741A73A16700228A1F /* MapKit.framework */; };
+		D90CB6771A73B1ED00228A1F /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */; };
+		D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB67E1A73C4B200228A1F /* Geotification.swift */; };
+		D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */; };
+		D9835AF31AA6076800D265BC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9835AF21AA6076800D265BC /* Utilities.swift */; };
+		D9C1AF6C1A77CD6C00A06B2F /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D9C1AF6B1A77CD6C00A06B2F /* TestLocations.gpx */; };
+		DD6ED23174876F89DD5DB7EC /* Pods_Geotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052927BD533226E57E8C16BB /* Pods_Geotify.framework */; };
+		EF2E65FC1EE9B3D300E74681 /* squadMap.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E65FB1EE9B3D300E74681 /* squadMap.png */; };
+		EF2E65FE1EE9B67F00E74681 /* mysquadicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E65FD1EE9B67F00E74681 /* mysquadicon.png */; };
+		EF2E66001EE9B96C00E74681 /* squadgoalslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E65FF1EE9B96C00E74681 /* squadgoalslogo.png */; };
+		EF2E66021EE9B9A200E74681 /* squadgoallogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E66011EE9B9A200E74681 /* squadgoallogo1.png */; };
+		EF2E66041EE9BB7200E74681 /* squadtodos.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E66031EE9BB7200E74681 /* squadtodos.png */; };
+		EF2E66061EE9BCB600E74681 /* mysquad.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E66051EE9BCB600E74681 /* mysquad.png */; };
+		EF2E66081EE9BE7400E74681 /* squadgoalfront.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E66071EE9BE7400E74681 /* squadgoalfront.png */; };
+		EF2E660A1EE9CC0400E74681 /* mysquadpage.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2E66091EE9CC0400E74681 /* mysquadpage.png */; };
+		EF87DF761EE9D61E0053A57B /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = EF87DF751EE9D61E0053A57B /* login.png */; };
+		EF87DF781EE9D6880053A57B /* squadlogin.png in Resources */ = {isa = PBXBuildFile; fileRef = EF87DF771EE9D6880053A57B /* squadlogin.png */; };
+		EF87DF7C1EE9DCDB0053A57B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF87DF7B1EE9DCDB0053A57B /* GoogleService-Info.plist */; };
+		EF87DF871EE9E3400053A57B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87DF861EE9E3400053A57B /* User.swift */; };
+		EF87DF901EE9E3E70053A57B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87DF8D1EE9E3E70053A57B /* LoginViewController.swift */; };
+		EF87DF921EE9E3E70053A57B /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87DF8F1EE9E3E70053A57B /* OnlineUsersTableViewController.swift */; };
+		EF87DF941EE9F1560053A57B /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87DF931EE9F1560053A57B /* ToDoListTableViewController.swift */; };
+		EF87DF961EEF08AC0053A57B /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87DF951EEF08AC0053A57B /* CustomAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		052927BD533226E57E8C16BB /* Pods_Geotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9966FA764BF23338040B5D /* Pods-Geotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geotify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Geotify/Pods-Geotify.debug.xcconfig"; sourceTree = "<group>"; };
+		A9D970221CABD90485714F89 /* Pods-Geotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geotify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Geotify/Pods-Geotify.release.xcconfig"; sourceTree = "<group>"; };
+		D90CB64D1A739B7A00228A1F /* Geotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90CB6511A739B7A00228A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90CB6521A739B7A00228A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Geotify/AppDelegate.swift; sourceTree = "<group>"; };
+		D90CB6571A739B7A00228A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D90CB6591A739B7A00228A1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D90CB65C1A739B7A00228A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D90CB6721A739D4300228A1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D90CB6741A73A16700228A1F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
+		D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
+		D90CB67E1A73C4B200228A1F /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		D9835AF21AA6076800D265BC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Geotify/Utilities.swift; sourceTree = "<group>"; };
+		D9C1AF6B1A77CD6C00A06B2F /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestLocations.gpx; sourceTree = "<group>"; };
+		EF2E65FB1EE9B3D300E74681 /* squadMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squadMap.png; path = ../squadMap.png; sourceTree = "<group>"; };
+		EF2E65FD1EE9B67F00E74681 /* mysquadicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mysquadicon.png; path = ../mysquadicon.png; sourceTree = "<group>"; };
+		EF2E65FF1EE9B96C00E74681 /* squadgoalslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squadgoalslogo.png; path = ../squadgoalslogo.png; sourceTree = "<group>"; };
+		EF2E66011EE9B9A200E74681 /* squadgoallogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squadgoallogo1.png; path = ../../Desktop/squadgoallogo1.png; sourceTree = SOURCE_ROOT; };
+		EF2E66031EE9BB7200E74681 /* squadtodos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squadtodos.png; path = ../squadtodos.png; sourceTree = "<group>"; };
+		EF2E66051EE9BCB600E74681 /* mysquad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mysquad.png; path = ../mysquad.png; sourceTree = "<group>"; };
+		EF2E66071EE9BE7400E74681 /* squadgoalfront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squadgoalfront.png; path = ../squadgoalfront.png; sourceTree = "<group>"; };
+		EF2E66091EE9CC0400E74681 /* mysquadpage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mysquadpage.png; path = ../mysquadpage.png; sourceTree = "<group>"; };
+		EF87DF751EE9D61E0053A57B /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login.png; path = ../login.png; sourceTree = "<group>"; };
+		EF87DF771EE9D6880053A57B /* squadlogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squadlogin.png; path = ../squadlogin.png; sourceTree = "<group>"; };
+		EF87DF7B1EE9DCDB0053A57B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF87DF861EE9E3400053A57B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../Downloads/Grocr-starter/Grocr/User.swift"; sourceTree = "<group>"; };
+		EF87DF8D1EE9E3E70053A57B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "../../../Downloads/Grocr-starter/Grocr/LoginViewController.swift"; sourceTree = "<group>"; };
+		EF87DF8F1EE9E3E70053A57B /* OnlineUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineUsersTableViewController.swift; path = "../../../Downloads/Grocr-starter/Grocr/OnlineUsersTableViewController.swift"; sourceTree = "<group>"; };
+		EF87DF931EE9F1560053A57B /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
+		EF87DF951EEF08AC0053A57B /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D90CB64A1A739B7A00228A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90CB6751A73A16700228A1F /* MapKit.framework in Frameworks */,
+				D90CB6731A739D4300228A1F /* CoreLocation.framework in Frameworks */,
+				DD6ED23174876F89DD5DB7EC /* Pods_Geotify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D90CB6441A739B7A00228A1F = {
+			isa = PBXGroup;
+			children = (
+				D90CB64F1A739B7A00228A1F /* Geotify */,
+				D9AEA6FE1A793D570020A0D4 /* Frameworks */,
+				D90CB64E1A739B7A00228A1F /* Products */,
+				DE90AAA2BDC215B0D83F199A /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		D90CB64E1A739B7A00228A1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D90CB64D1A739B7A00228A1F /* Geotify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90CB64F1A739B7A00228A1F /* Geotify */ = {
+			isa = PBXGroup;
+			children = (
+				EF87DF8B1EE9E38E0053A57B /* Images */,
+				EF87DF8A1EE9E3680053A57B /* ViewControllers */,
+				EF87DF851EE9E3360053A57B /* Modules */,
+				D90CB6561A739B7A00228A1F /* Main.storyboard */,
+				EF87DF8C1EE9E3AF0053A57B /* Other */,
+				D90CB6591A739B7A00228A1F /* Images.xcassets */,
+				D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */,
+				D90CB6501A739B7A00228A1F /* Supporting Files */,
+			);
+			path = Geotify;
+			sourceTree = "<group>";
+		};
+		D90CB6501A739B7A00228A1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9C1AF6B1A77CD6C00A06B2F /* TestLocations.gpx */,
+				D90CB6511A739B7A00228A1F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9AEA6FE1A793D570020A0D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D90CB6741A73A16700228A1F /* MapKit.framework */,
+				D90CB6721A739D4300228A1F /* CoreLocation.framework */,
+				052927BD533226E57E8C16BB /* Pods_Geotify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE90AAA2BDC215B0D83F199A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D9966FA764BF23338040B5D /* Pods-Geotify.debug.xcconfig */,
+				A9D970221CABD90485714F89 /* Pods-Geotify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF87DF851EE9E3360053A57B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D90CB67E1A73C4B200228A1F /* Geotification.swift */,
+				EF87DF861EE9E3400053A57B /* User.swift */,
+				EF87DF951EEF08AC0053A57B /* CustomAnnotation.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		EF87DF8A1EE9E3680053A57B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF87DF8D1EE9E3E70053A57B /* LoginViewController.swift */,
+				EF87DF8F1EE9E3E70053A57B /* OnlineUsersTableViewController.swift */,
+				D90CB67C1A73B2BD00228A1F /* AddGeotificationViewController.swift */,
+				D90CB6761A73B1ED00228A1F /* GeotificationsViewController.swift */,
+				EF87DF931EE9F1560053A57B /* ToDoListTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EF87DF8B1EE9E38E0053A57B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E66071EE9BE7400E74681 /* squadgoalfront.png */,
+				EF2E65FF1EE9B96C00E74681 /* squadgoalslogo.png */,
+				EF2E66091EE9CC0400E74681 /* mysquadpage.png */,
+				EF2E65FB1EE9B3D300E74681 /* squadMap.png */,
+				EF87DF751EE9D61E0053A57B /* login.png */,
+				EF87DF771EE9D6880053A57B /* squadlogin.png */,
+				EF2E66031EE9BB7200E74681 /* squadtodos.png */,
+				EF2E66011EE9B9A200E74681 /* squadgoallogo1.png */,
+				EF2E66051EE9BCB600E74681 /* mysquad.png */,
+				EF2E65FD1EE9B67F00E74681 /* mysquadicon.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EF87DF8C1EE9E3AF0053A57B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EF87DF7B1EE9DCDB0053A57B /* GoogleService-Info.plist */,
+				D90CB6521A739B7A00228A1F /* AppDelegate.swift */,
+				D9835AF21AA6076800D265BC /* Utilities.swift */,
+			);
+			name = Other;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D90CB64C1A739B7A00228A1F /* Geotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90CB66C1A739B7A00228A1F /* Build configuration list for PBXNativeTarget "Geotify" */;
+			buildPhases = (
+				7F336CFE8770A682C4899822 /* [CP] Check Pods Manifest.lock */,
+				D90CB6491A739B7A00228A1F /* Sources */,
+				D90CB64A1A739B7A00228A1F /* Frameworks */,
+				D90CB64B1A739B7A00228A1F /* Resources */,
+				6C3973EA2801EF2440FC0E62 /* [CP] Embed Pods Frameworks */,
+				3F778B550F84A3AAEFDB49EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geotify;
+			productName = Geotify;
+			productReference = D90CB64D1A739B7A00228A1F /* Geotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90CB6451A739B7A00228A1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ken Toh";
+				TargetAttributes = {
+					D90CB64C1A739B7A00228A1F = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9937BB9ZP5;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D90CB6481A739B7A00228A1F /* Build configuration list for PBXProject "Geotify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D90CB6441A739B7A00228A1F;
+			productRefGroup = D90CB64E1A739B7A00228A1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D90CB64C1A739B7A00228A1F /* Geotify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D90CB64B1A739B7A00228A1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2E66041EE9BB7200E74681 /* squadtodos.png in Resources */,
+				EF2E66021EE9B9A200E74681 /* squadgoallogo1.png in Resources */,
+				EF87DF7C1EE9DCDB0053A57B /* GoogleService-Info.plist in Resources */,
+				D90CB6581A739B7A00228A1F /* Main.storyboard in Resources */,
+				D90CB65D1A739B7A00228A1F /* LaunchScreen.xib in Resources */,
+				EF87DF781EE9D6880053A57B /* squadlogin.png in Resources */,
+				EF2E66081EE9BE7400E74681 /* squadgoalfront.png in Resources */,
+				D9C1AF6C1A77CD6C00A06B2F /* TestLocations.gpx in Resources */,
+				EF2E66001EE9B96C00E74681 /* squadgoalslogo.png in Resources */,
+				EF2E65FE1EE9B67F00E74681 /* mysquadicon.png in Resources */,
+				D90CB65A1A739B7A00228A1F /* Images.xcassets in Resources */,
+				EF2E66061EE9BCB600E74681 /* mysquad.png in Resources */,
+				EF87DF761EE9D61E0053A57B /* login.png in Resources */,
+				EF2E65FC1EE9B3D300E74681 /* squadMap.png in Resources */,
+				EF2E660A1EE9CC0400E74681 /* mysquadpage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F778B550F84A3AAEFDB49EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geotify/Pods-Geotify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C3973EA2801EF2440FC0E62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Geotify/Pods-Geotify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F336CFE8770A682C4899822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90CB6491A739B7A00228A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF87DF901EE9E3E70053A57B /* LoginViewController.swift in Sources */,
+				D90CB6821A73CBC600228A1F /* AddGeotificationViewController.swift in Sources */,
+				D90CB6531A739B7A00228A1F /* AppDelegate.swift in Sources */,
+				D90CB6771A73B1ED00228A1F /* GeotificationsViewController.swift in Sources */,
+				EF87DF921EE9E3E70053A57B /* OnlineUsersTableViewController.swift in Sources */,
+				EF87DF941EE9F1560053A57B /* ToDoListTableViewController.swift in Sources */,
+				D9835AF31AA6076800D265BC /* Utilities.swift in Sources */,
+				EF87DF961EEF08AC0053A57B /* CustomAnnotation.swift in Sources */,
+				EF87DF871EE9E3400053A57B /* User.swift in Sources */,
+				D90CB6801A73C9E200228A1F /* Geotification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D90CB6561A739B7A00228A1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90CB6571A739B7A00228A1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D90CB65B1A739B7A00228A1F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90CB65C1A739B7A00228A1F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D90CB66A1A739B7A00228A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D90CB66B1A739B7A00228A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90CB66D1A739B7A00228A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9966FA764BF23338040B5D /* Pods-Geotify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9937BB9ZP5;
+				INFOPLIST_FILE = Geotify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.SquadGoals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D90CB66E1A739B7A00228A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D970221CABD90485714F89 /* Pods-Geotify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9937BB9ZP5;
+				INFOPLIST_FILE = Geotify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.SquadGoals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90CB6481A739B7A00228A1F /* Build configuration list for PBXProject "Geotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90CB66A1A739B7A00228A1F /* Debug */,
+				D90CB66B1A739B7A00228A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90CB66C1A739B7A00228A1F /* Build configuration list for PBXNativeTarget "Geotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90CB66D1A739B7A00228A1F /* Debug */,
+				D90CB66E1A739B7A00228A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D90CB6451A739B7A00228A1F /* Project object */;
+}
